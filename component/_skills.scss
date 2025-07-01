@@ -1,0 +1,19 @@
+.skills {
+  position: absolute;
+  top: 0;
+  width: 75%;
+  margin-left: 12.5vw;
+  margin-top: 100px;
+  text-align: center;
+
+  h2 {
+    font-size: 48px;
+    color: white;
+  }
+
+  .cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

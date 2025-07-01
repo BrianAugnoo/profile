@@ -1,0 +1,120 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Monsieur+La+Doulaise&family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.op-0 {
+  background-color: rgba(234, 229, 229, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.intro {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 75px;
+  text-align: center;
+}
+.intro h1 {
+  font-size: 60px;
+}
+
+.self {
+  display: flex;
+  justify-content: center;
+}
+.self img {
+  align-self: center;
+  margin-inline: 10px;
+}
+
+.img_circle {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.curv {
+  font-family: "Lavishly Yours", cursive;
+  color: rgb(70, 2, 95);
+}
+
+.elipse {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 400px;
+  background: radial-gradient(ellipse at center, rgba(70, 2, 95, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.skills {
+  position: absolute;
+  top: 0;
+  width: 75%;
+  margin-left: 12.5vw;
+  margin-top: 100px;
+  text-align: center;
+}
+.skills h2 {
+  font-size: 48px;
+  color: white;
+}
+.skills .cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background-color: #0A0A0A;
+  font-family: "Old Standard TT", serif;
+  color: #fcfcfc;
+}
+
+.fix {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.fix nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+.fix nav a {
+  text-decoration: none;
+  color: #C7C7C7;
+}
+
+.relative {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */

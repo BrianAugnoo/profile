@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Monsieur+La+Doulaise&family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.intro {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 75px;
+  text-align: center;
+
+  h1 {
+    font-size: 60px;
+  }
+}
+
+
+.self{
+  display: flex;
+  justify-content: center;
+
+  img {
+    align-self: center;
+    margin-inline: 10px;
+  }
+}
+
+.img_circle {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.curv {
+  font-family: "Lavishly Yours", cursive;
+  color: rgba(70, 2, 95);
+}
