@@ -89,6 +89,27 @@
   justify-content: space-between;
 }
 
+.skills-glass {
+  width: 240px;
+  height: 160px;
+  margin: 24px auto 0 auto;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255, 255, 255, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.skills-glass:hover {
+  box-shadow: 0 12px 32px 0 rgba(164, 80, 139, 0.18);
+  background: rgba(255, 255, 255, 0.18);
+}
+
 body {
   background-color: #0A0A0A;
   font-family: "Old Standard TT", serif;
