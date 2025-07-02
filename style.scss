@@ -49,6 +49,9 @@ body {
 }
 
 @media (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
 
   /* For a screen < 720px, this CSS will be read */
   .container {
@@ -57,6 +60,9 @@ body {
 }
 
 @media (max-width: 540px) {
+  body {
+    overflow-x: hidden;
+  }
 
   /* For a screen < 540px, this CSS will be read */
   .container {
