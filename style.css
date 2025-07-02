@@ -10,6 +10,13 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.fix {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: inherit;
+}
+
 .intro {
   width: 75%;
   margin: 0 auto;
@@ -166,7 +173,7 @@ body {
 .fix {
   display: flex;
   justify-content: space-around;
-  margin-top: 25px;
+  padding-top: 25px;
 }
 .fix nav {
   display: flex;
