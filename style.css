@@ -40,6 +40,25 @@
   color: rgb(70, 2, 95);
 }
 
+.show-cv {
+  background: linear-gradient(90deg, #46025f 0%, #a4508b 100%);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(70, 2, 95, 0.08);
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+
+.show-cv:hover {
+  background: linear-gradient(90deg, #a4508b 0%, #46025f 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
 .elipse {
   position: relative;
   bottom: 0;
