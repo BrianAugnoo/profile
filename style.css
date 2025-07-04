@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
@@ -67,6 +68,12 @@
 }
 
 @media (max-width: 720px) {
+  .intro {
+    margin-top: 50px;
+  }
+  .intro h1 {
+    font-size: 48px;
+  }
   .intro .self {
     flex-direction: column;
     align-items: center;
@@ -82,7 +89,6 @@
 }
 .elipse {
   position: relative;
-  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 2000px;
@@ -93,12 +99,11 @@
 }
 
 .skills {
-  position: static;
-  top: 0;
+  position: relative;
+  top: -200px;
   width: 75%;
   margin-left: 12.5vw;
   text-align: center;
-  margin-bottom: 200px;
   z-index: 2;
 }
 .skills h2 {
@@ -160,6 +165,11 @@
   margin-right: 5px;
 }
 
+@media (max-width: 1024px) {
+  .skills-glass {
+    width: 30vw;
+  }
+}
 @media (max-width: 720px) {
   .skills .cards {
     flex-direction: column;
@@ -180,20 +190,53 @@
     width: 50vw;
   }
 }
-@media (max-width: 1024px) {
-  .skills-glass {
-    width: 30vw;
-  }
-}
 .education {
+  position: relative;
   width: 75vw;
   margin: 0 auto;
+  text-align: center;
+  bottom: 150px;
+}
+.education h2 {
+  font-size: 48px;
+  color: white;
+  margin-top: 0;
+}
+
+/* 1. Pour Firefox */
+.element {
+  scrollbar-width: none; /* masque la scrollbar */
+  -ms-overflow-style: none; /* pour IE et Edge Legacy */
+}
+
+/* 2. Pour Chrome, Safari et Edge moderne */
+.element::-webkit-scrollbar {
+  display: none; /* masque la scrollbar WebKit */
+}
+
+/* 3. Exemple d’application sur tout le body */
+body {
+  /* autorise toujours le scroll malgré l’absence de barre visible */
+  overflow: auto;
+  /* règles de masquage */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #0A0A0A;
   font-family: "Old Standard TT", serif;
   color: #fcfcfc;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .fix {
@@ -227,9 +270,6 @@ body {
   }
 }
 @media (max-width: 720px) {
-  body {
-    overflow-x: hidden;
-  }
   /* For a screen < 720px, this CSS will be read */
   .container {
     width: 500px;

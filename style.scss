@@ -7,10 +7,18 @@
 @import 'component/elipse';
 @import 'component/skills';
 @import 'component/education';
+@import 'component/scroll';
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0A0A0A;
   font-family: "Old Standard TT", serif;
   color: #fcfcfc;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 
@@ -47,12 +55,10 @@ body {
   .container {
     width: 700px;
   }
+  
 }
 
 @media (max-width: 720px) {
-  body {
-    overflow-x: hidden;
-  }
 
   /* For a screen < 720px, this CSS will be read */
   .container {
