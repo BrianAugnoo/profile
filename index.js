@@ -1,0 +1,1 @@
+console.log("hire me and the code god will bless you🥀");
