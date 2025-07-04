@@ -232,6 +232,7 @@ html {
 }
 
 body {
+  width: 100vw;
   background-color: #0A0A0A;
   font-family: "Old Standard TT", serif;
   color: #fcfcfc;
