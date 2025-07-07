@@ -1,13 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Lavishly+Yours&family=Monsieur+La+Doulaise&family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .education {
     position: relative;
     width: 75vw;
     margin: 0 auto;
     text-align: center;
-    bottom: 150px;
+    bottom: 50px;
 
     h2 {
         font-size: 48px;
         color: white;
         margin-top: 0;
       }
+}
+
+.wagon {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+
+  h3 {
+    font-size: 36px;
+    margin: 0;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(288deg, #600075, rgb(159, 1, 96) 20%, #E60F05);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  img {
+    width: 45%;
+    height: auto;
+
+  }
+}
+
+.wagon-info {
+  width: 40%;
+}
+
+.description {
+  text-align: start;
+  font-family: "Edu VIC WA NT Hand", cursive;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  letter-spacing: 2px;
+  overflow-wrap: break-word;
 }
