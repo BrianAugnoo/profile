@@ -8,6 +8,8 @@
 @import 'component/skills';
 @import 'component/education';
 @import 'component/scroll';
+@import 'component/project';
+@import 'component/javascript_effect';
 
 html {
   scroll-behavior: smooth;
@@ -64,15 +66,28 @@ body {
   .container {
     width: 500px;
   }
+
+  html, body {
+  width: 100vw;
+  background: black;
+  font-family: "Old Standard TT", serif;
+  color: #fcfcfc;
+  overflow: hidden;
+ }
+
+ .op-0 {
+  display: none;
+ }
+
 }
 
 @media (max-width: 540px) {
-  body {
-    overflow-x: hidden;
-  }
-
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
   }
+
+  .op-0 {
+  display: none;
+ }
 }

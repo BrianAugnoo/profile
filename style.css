@@ -73,11 +73,10 @@
     margin-top: 50px;
   }
   .intro h1 {
-    font-size: 48px;
+    font-size: 36px;
   }
   .intro .self {
     flex-direction: column;
-    align-items: center;
     gap: 16px;
   }
 }
@@ -145,11 +144,13 @@
   width: 100%;
   height: 20%;
 }
+.glass-column .glass {
+  width: 45%;
+  height: 100%;
+}
 
 .glass {
   border-radius: 10px;
-  width: 45%;
-  height: 100%;
   background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
   backdrop-filter: blur(8px);
@@ -190,6 +191,9 @@
   .skills-glass {
     width: 75vw;
   }
+  .glass {
+    font-size: 12px;
+  }
 }
 .education {
   position: relative;
@@ -203,19 +207,19 @@
   color: white;
   margin-top: 0;
 }
-
-.wagon {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-}
-.wagon h3 {
+.education h3 {
   font-size: 36px;
   margin: 0;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(288deg, #600075, rgb(159, 1, 96) 20%, #E60F05);
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+.wagon {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 .wagon img {
   width: 45%;
@@ -235,6 +239,30 @@
   overflow-wrap: break-word;
 }
 
+@media (max-width: 540px) {
+  .education {
+    bottom: 150px;
+  }
+  .education h2 {
+    font-size: 36px;
+  }
+  .education h3 {
+    font-size: 24px;
+  }
+  .wagon {
+    flex-direction: column-reverse;
+  }
+  .wagon img {
+    width: 100%;
+  }
+  .wagon-info {
+    width: 100%;
+    text-align: center;
+  }
+  .description {
+    font-size: 12px;
+  }
+}
 /* 1. Pour Firefox */
 .element {
   scrollbar-width: none; /* masque la scrollbar */
@@ -257,6 +285,85 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+.project {
+  position: relative;
+  bottom: 50px;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+}
+.project h2 {
+  font-size: 48px;
+  color: white;
+  margin-top: 0;
+}
+
+.project-column {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ilustrator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 233vh;
+}
+.ilustrator .glass {
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.ilustrator .glass img {
+  border-radius: 20px;
+}
+.ilustrator .glass img :hover {
+  transform: rotate(-30deg);
+}
+
+#handmade img {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 200px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 13px 5px rgba(255, 255, 255, 0.4);
+}
+
+.project-description {
+  position: sticky;
+  top: 0;
+  width: 35%;
+  height: 70vh;
+  overflow-wrap: break-word;
+  text-align: start;
+}
+.project-description h3 {
+  margin-top: 0;
+}
+
+#handmade {
+  background: rgba(2, 20, 86, 0.456);
+}
+
+.description-spacing {
+  padding-top: 75px;
+}
+
+.relative-position {
+  position: relative;
+  top: 70vh;
+}
+
+.sticky-position {
+  position: sticky;
+  bottom: 70vh;
 }
 
 html {
@@ -306,13 +413,23 @@ body {
   .container {
     width: 500px;
   }
+  html, body {
+    width: 100vw;
+    background: black;
+    font-family: "Old Standard TT", serif;
+    color: #fcfcfc;
+    overflow: hidden;
+  }
+  .op-0 {
+    display: none;
+  }
 }
 @media (max-width: 540px) {
-  body {
-    overflow-x: hidden;
-  }
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
+  }
+  .op-0 {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

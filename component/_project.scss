@@ -1,0 +1,72 @@
+.project {
+  position: relative;
+  bottom: 50px;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+
+  h2 {
+    font-size: 48px;
+    color: white;
+    margin-top: 0;
+  }
+}
+
+.project-column {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ilustrator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 233vh;
+
+
+  .glass {
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 20px;
+
+    img {
+      border-radius: 20px;
+
+      :hover {
+        transform: rotate(-30deg);
+      }
+    }
+  }
+}
+
+#handmade {
+  img {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 13px 5px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.project-description {
+  position: sticky;
+  top: 0;
+  width: 35%;
+  height: 70vh;
+  overflow-wrap: break-word;
+  text-align: start;
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+#handmade {
+  background: rgba(2, 20, 86, 0.456);
+}

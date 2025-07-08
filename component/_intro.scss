@@ -53,15 +53,16 @@
 }
 
 @media (max-width: 720px) {
-  .intro{ 
+  .intro{
     margin-top: 50px;
+
     h1 {
-      font-size: 48px;
+      font-size: 36px;
     }
-    .self { 
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+
+    .self {
+      flex-direction: column;
+      gap: 16px;
     }
   }
 }

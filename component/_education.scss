@@ -12,21 +12,21 @@
         color: white;
         margin-top: 0;
       }
-}
 
-.wagon {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-
-  h3 {
+    h3 {
     font-size: 36px;
     margin: 0;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(288deg, #600075, rgb(159, 1, 96) 20%, #E60F05);
     -webkit-background-clip: text;
     background-clip: text;
-  }
+   }
+}
+
+.wagon {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 
   img {
     width: 45%;
@@ -46,4 +46,38 @@
   font-optical-sizing: auto;
   letter-spacing: 2px;
   overflow-wrap: break-word;
+}
+
+@media (max-width: 540px) {
+
+  .education {
+    bottom: 150px;
+
+    h2 {
+      font-size: 36px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  .wagon  {
+    flex-direction: column-reverse;
+  }
+
+  .wagon {
+    img {
+      width: 100%;
+    }
+  }
+
+  .wagon-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 12px;
+  }
 }
