@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
@@ -263,30 +262,6 @@
     font-size: 12px;
   }
 }
-/* 1. Pour Firefox */
-.element {
-  scrollbar-width: none; /* masque la scrollbar */
-  -ms-overflow-style: none; /* pour IE et Edge Legacy */
-}
-
-/* 2. Pour Chrome, Safari et Edge moderne */
-.element::-webkit-scrollbar {
-  display: none; /* masque la scrollbar WebKit */
-}
-
-/* 3. Exemple d’application sur tout le body */
-body {
-  /* autorise toujours le scroll malgré l’absence de barre visible */
-  overflow: auto;
-  /* règles de masquage */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .project {
   position: relative;
   bottom: 50px;
@@ -366,16 +341,10 @@ body::-webkit-scrollbar {
   bottom: 70vh;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  width: 100vw;
   background: black;
   font-family: "Old Standard TT", serif;
   color: #fcfcfc;
-  overflow: hidden;
 }
 
 .fix {
@@ -413,13 +382,6 @@ body {
   .container {
     width: 500px;
   }
-  html, body {
-    width: 100vw;
-    background: black;
-    font-family: "Old Standard TT", serif;
-    color: #fcfcfc;
-    overflow: hidden;
-  }
   .op-0 {
     display: none;
   }
@@ -432,4 +394,8 @@ body {
   .op-0 {
     display: none;
   }
+}
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */

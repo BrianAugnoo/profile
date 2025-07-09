@@ -11,16 +11,13 @@
 @import 'component/project';
 @import 'component/javascript_effect';
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
-  width: 100vw;
+  // width: 100vw;
   background: black;
   font-family: "Old Standard TT", serif;
   color: #fcfcfc;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 
@@ -67,13 +64,13 @@ body {
     width: 500px;
   }
 
-  html, body {
-  width: 100vw;
-  background: black;
-  font-family: "Old Standard TT", serif;
-  color: #fcfcfc;
-  overflow: hidden;
- }
+//   html, body {
+//   width: 100vw;
+//   background: black;
+//   font-family: "Old Standard TT", serif;
+//   color: #fcfcfc;
+//   overflow: hidden;
+//  }
 
  .op-0 {
   display: none;
@@ -90,4 +87,9 @@ body {
   .op-0 {
   display: none;
  }
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
 }
