@@ -5,16 +5,16 @@
     width: 75vw;
     margin: 0 auto;
     text-align: center;
-    bottom: 50px;
+    margin-top: 10vh;
 
     h2 {
-        font-size: 48px;
+        font-size: 3rem;
         color: white;
         margin-top: 0;
       }
 
     h3 {
-    font-size: 36px;
+    font-size: 2.25rem;
     margin: 0;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(288deg, #600075, rgb(159, 1, 96) 20%, #E60F05);
@@ -30,22 +30,27 @@
 
   img {
     width: 45%;
-    height: auto;
+    height: proportion(75vw, 0.45);
 
   }
 }
 
 .wagon-info {
-  width: 40%;
+  width: 50%;
+  margin: 0;
 }
 
 .description {
   text-align: start;
   font-family: "Edu VIC WA NT Hand", cursive;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-optical-sizing: auto;
   letter-spacing: 2px;
   overflow-wrap: break-word;
+  
+  p {
+    margin: 0;
+  }
 }
 
 @media (max-width: 540px) {
@@ -54,11 +59,11 @@
     bottom: 150px;
 
     h2 {
-      font-size: 36px;
+      font-size: 2.25rem;
     }
 
     h3 {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   }
 
@@ -78,6 +83,6 @@
   }
 
   .description {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }

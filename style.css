@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
@@ -19,14 +20,28 @@
   background: transparent;
 }
 
+#smooth-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.intro-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .intro {
   width: 75%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 0;
   text-align: center;
 }
 .intro h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .self {
@@ -73,7 +88,7 @@
     margin-top: 50px;
   }
   .intro h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
   .intro .self {
     flex-direction: column;
@@ -95,19 +110,19 @@
   height: 400px;
   background: radial-gradient(ellipse at center, rgba(70, 2, 95, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
   pointer-events: none;
-  z-index: 1;
+  z-index: -1;
+  bottom: 50vh;
 }
 
 .skills {
   position: relative;
-  top: -200px;
   width: 75%;
   margin-left: 12.5vw;
   text-align: center;
   z-index: 2;
 }
 .skills h2 {
-  font-size: 48px;
+  font-size: 3rem;
   color: white;
   margin-top: 0;
 }
@@ -116,11 +131,12 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .skills-glass {
-  width: 15vw;
-  height: 160px;
+  width: 17vw;
+  aspect-ratio: 17/10.2;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
@@ -192,7 +208,7 @@
     width: 75vw;
   }
   .glass {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 .education {
@@ -200,15 +216,15 @@
   width: 75vw;
   margin: 0 auto;
   text-align: center;
-  bottom: 50px;
+  margin-top: 10vh;
 }
 .education h2 {
-  font-size: 48px;
+  font-size: 3rem;
   color: white;
   margin-top: 0;
 }
 .education h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
   margin: 0;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(288deg, #600075, rgb(159, 1, 96) 20%, #E60F05);
@@ -223,20 +239,24 @@
 }
 .wagon img {
   width: 45%;
-  height: auto;
+  height: 33.75vw;
 }
 
 .wagon-info {
-  width: 40%;
+  width: 50%;
+  margin: 0;
 }
 
 .description {
   text-align: start;
   font-family: "Edu VIC WA NT Hand", cursive;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-optical-sizing: auto;
   letter-spacing: 2px;
   overflow-wrap: break-word;
+}
+.description p {
+  margin: 0;
 }
 
 @media (max-width: 540px) {
@@ -244,10 +264,10 @@
     bottom: 150px;
   }
   .education h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
   .education h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .wagon {
     flex-direction: column-reverse;
@@ -260,7 +280,7 @@
     text-align: center;
   }
   .description {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 .project {
@@ -272,7 +292,7 @@
   text-align: center;
 }
 .project h2 {
-  font-size: 48px;
+  font-size: 3rem;
   color: white;
   margin-top: 0;
 }
@@ -289,10 +309,10 @@
   flex-direction: column;
   justify-content: space-between;
   width: 60%;
-  height: 150vh;
+  height: 70.875vw;
 }
 .ilustrator .glass {
-  height: 70vh;
+  height: 33.75vw;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -302,12 +322,13 @@
 
 #handmade {
   text-align: center;
+  background: #0F1342;
 }
 #handmade img {
-  position: absolute;
+  position: relative;
   width: 50%;
   height: auto;
-  top: 200px;
+  top: 300px;
   border-radius: 20px;
   box-shadow: 0px 0px 13px 5px rgba(255, 255, 255, 0.4);
 }
@@ -315,12 +336,26 @@
   transform: rotate(-30deg);
 }
 #handmade h3 {
-  position: absolute;
-  top: 12.5%;
-  font-size: 20px;
+  position: relative;
+  align-self: center;
+  font-size: 1.25rem;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.4);
+}
+
+#carbnb {
+  background: #4B122A;
+  display: flex;
+}
+#carbnb img {
+  align-items: flex-end;
+  position: absolute;
+  width: 90%;
+  height: auto;
+  top: 30vh;
+  border-radius: 20px;
+  box-shadow: 0px 0px 13px 5px rgba(255, 255, 255, 0.4);
 }
 
 .project-description {
@@ -335,93 +370,154 @@
   margin-top: 0;
 }
 
-#handmade {
-  background: #0F1342;
-}
-
-#carbnb {
-  background: #4B122A;
-}
-
 .handmade-description h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-top: 0;
   color: #5409DA;
 }
 
 .carbnb-description h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-top: 0;
   color: rgb(206, 232, 10);
 }
 
 .contact {
-  width: 75vw;
-  margin: 100px auto 0 auto;
+  width: 100vw;
+  margin: 100px 0 0 0;
   padding: 40px 0 60px 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.07);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 24px;
-  border: 1.5px solid rgba(255, 255, 255, 0.22);
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
   position: relative;
   z-index: 2;
+}
+.contact .contact-info {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.contact .contact-info h2 {
+  font-size: 48px;
+  color: white;
+  margin-top: 0;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.contact .contact-info h3 {
+  font-size: 2rem;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  background: linear-gradient(90deg, #a4508b 0%, #46025f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+.contact .contact-info p {
+  font-size: 1.1rem;
+  color: #fcfcfc;
+  margin-bottom: 0;
+}
+.contact .contact-info p a {
+  color: #a4508b;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.contact .contact-info p a:hover {
+  color: #46025f;
 }
 .contact form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 400px;
-  gap: 18px;
-  background: rgba(0, 0, 0, 0.15);
-  padding: 32px 24px;
-  border-radius: 18px;
-  box-shadow: 0 2px 8px rgba(70, 2, 95, 0.08);
+  gap: 22px;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
   font-family: "Open Sans", sans-serif;
   color: #fcfcfc;
 }
 .contact form label {
   font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 4px;
-  color: #a4508b;
-  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+  font-family: "Old Standard TT", serif;
+  color: #fff;
+  background: none;
+  display: block;
 }
 .contact form input[type=email], .contact form input[type=text] {
-  padding: 12px 16px;
-  border-radius: 10px;
-  border: 1px solid #a4508b;
-  background: rgba(255, 255, 255, 0.13);
-  color: #fcfcfc;
-  font-size: 1rem;
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: #1a0033;
+  font-size: 1.05rem;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 4px 24px 0 rgba(70, 2, 95, 0.1);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   outline: none;
-  transition: border 0.2s, background 0.2s;
+  transition: box-shadow 0.2s, background 0.2s;
   margin-bottom: 8px;
 }
 .contact form input[type=email]:focus, .contact form input[type=text]:focus {
-  border: 1.5px solid #46025f;
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 6px 32px 0 rgba(164, 80, 139, 0.18);
+}
+.contact form textarea[name=message] {
+  width: 100%;
+  min-height: 90px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: none;
   background: rgba(255, 255, 255, 0.18);
+  color: #1a0033;
+  font-size: 1.05rem;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 4px 24px 0 rgba(70, 2, 95, 0.1);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  outline: none;
+  transition: box-shadow 0.2s, background 0.2s;
+  margin-bottom: 8px;
+  resize: vertical;
+}
+.contact form textarea[name=message]:focus {
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 6px 32px 0 rgba(164, 80, 139, 0.18);
 }
 .contact form button {
-  background: linear-gradient(90deg, #46025f 0%, #a4508b 100%);
+  background: linear-gradient(90deg, #a4508b 0%, #46025f 100%);
   color: #fff;
   border: none;
   border-radius: 25px;
-  padding: 12px 32px;
-  font-size: 1.1rem;
+  padding: 14px 38px;
+  font-size: 1.15rem;
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(70, 2, 95, 0.08);
-  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 12px rgba(70, 2, 95, 0.13);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
   margin-top: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
-.contact form button:hover {
-  background: linear-gradient(90deg, #a4508b 0%, #46025f 100%);
-  transform: translateY(-2px) scale(1.04);
+.contact form button:hover, .contact form button:focus {
+  background: linear-gradient(90deg, #46025f 0%, #a4508b 100%);
+  /* L'animation GSAP sera appliquée en JS */
 }
 .contact form #my-form-status {
   font-size: 1rem;
@@ -432,12 +528,12 @@
 
 @media (max-width: 720px) {
   .contact {
-    width: 95vw;
+    width: 100vw;
     padding: 24px 0 32px 0;
   }
   .contact form {
     max-width: 95vw;
-    padding: 18px 8px;
+    padding: 0;
   }
 }
 body {
@@ -468,6 +564,7 @@ body {
 .relative {
   position: relative;
   width: 100%;
+  margin-top: 20vh;
 }
 
 @media (max-width: 960px) {
@@ -497,4 +594,8 @@ body {
 body {
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+#planet {
+  border: 1px solid white;
 }/*# sourceMappingURL=style.css.map */

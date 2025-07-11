@@ -1,0 +1,4 @@
+@function proportion($width, $ratio) {
+    @return $width * $ratio
+}
+  

@@ -23,25 +23,29 @@
 
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <div class="intro" id="intro">
-        <h1>
-          I help founders turn ideas <br>
-          into seamless <span class="curv">digital experiences</span>
-        </h1>
-
-        <div class="self">
-          <h2>Hello, I'm Augnoo Brian</h2>
-          <img src="images/moi.jpg" alt="avatar" class="img_circle">
-          <h2>a Back End developer</h2>
-        </div>
-        <div style="display: flex; justify-content: center; margin-top: 20px;">
-          <a href="file/AugnooBrianResume (2).pdf" download="this_guy_cv.pdf">
-            <button class="show-cv">show cv</button>
-          </a>
+      <div class="intro-container">
+        <div class="intro" id="intro">
+          <h1>
+            I help founders turn ideas <br>
+            into seamless <span class="curv">digital experiences</span>
+          </h1>
+  
+          <div class="self">
+            <h2>Hello, I'm Augnoo Brian</h2>
+            <img src="images/moi.jpg" alt="avatar" class="img_circle">
+            <h2>a Back End developer</h2>
+          </div>
+          <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <a href="file/AugnooBrianResume (2).pdf" download="this_guy_cv.pdf">
+              <button class="show-cv">show cv</button>
+            </a>
+          </div>
         </div>
       </div>
+
+      <canvas id="planet"></canvas>
+
       <div class="relative">
-        <div class="elipse"></div>
         <div class="skills">
           <h2>Skills</h2>
 
@@ -255,12 +259,16 @@
         </div>
 
         <div class="contact">
+          <div class="contact-info">
+            <h2>Let's build something meaningful together</h2>
+            <p>You can reach me directly at: <a href="mailto:augnoobrian@gmail.com">augnoobrian@gmail.com</a></p>
+          </div>
           <form id="my-form" action="https://formspree.io/f/movwgndv" method="POST">
             <label>Email:</label>
             <input type="email" name="email" />
             <label>Message:</label>
-            <input type="text" name="message" />
-            <button id="my-form-button">Submit</button>
+            <textarea name="message"></textarea>
+            <button id="my-form-button">👋 Get in touch</button>
             <p id="my-form-status"></p>
           </form>
         </div>
@@ -274,6 +282,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
   <script src="index.js" defer></script>
+  <script src="sculpture.js" defer></script>
 </body>
 
 </html>

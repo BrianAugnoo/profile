@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     end: "bottom + 140vh",
     scrub: true,
     pin: true,
-    markers: true,
   },
   opacity: 1,
   y: "20vh",
@@ -116,3 +115,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   }
   form.addEventListener("submit", handleSubmit)
+
+  // Animation GSAP sur le bouton du formulaire de contact
+  const contactBtn = document.querySelector('#my-form-button');
+  if (contactBtn) {
+    contactBtn.addEventListener('mouseenter', () => {
+      gsap.to(contactBtn, { scale: 1.08, boxShadow: '0 4px 24px #a4508b', duration: 0.25, ease: 'power2.out' });
+    });
+    contactBtn.addEventListener('mouseleave', () => {
+      gsap.to(contactBtn, { scale: 1, boxShadow: '0 2px 12px rgba(70,2,95,0.13)', duration: 0.25, ease: 'power2.in' });
+    });
+  }

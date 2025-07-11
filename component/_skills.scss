@@ -1,13 +1,12 @@
 .skills {
   position: relative;
-  top: -200px;
   width: 75%;
   margin-left: 12.5vw;
   text-align: center;
   z-index: 2;
 
   h2 {
-    font-size: 48px;
+    font-size: 3rem;
     color: white;
     margin-top: 0;
   }
@@ -17,12 +16,13 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    flex-wrap: wrap; 
   }
 }
 
 .skills-glass {
-  width: 15vw;
-  height: 160px;
+  width: 17vw;
+  aspect-ratio: 17 / 10.2;
   border-radius: 18px;
   background: rgba(255,255,255,0.13);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
@@ -101,6 +101,6 @@
   }
 
   .glass {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }

@@ -1,3 +1,7 @@
+@function ilustrator($width, $ratio) {
+  @return proportion($width, $ratio ) * (1 + (1 / 20))
+}
+
 .project {
   position: relative;
   bottom: 50px;
@@ -7,7 +11,7 @@
   text-align: center;
 
   h2 {
-    font-size: 48px;
+    font-size: 3rem;
     color: white;
     margin-top: 0;
   }
@@ -25,11 +29,11 @@
   flex-direction: column;
   justify-content: space-between;
   width: 60%;
-  height: 150vh;
+  height: ilustrator(45vw, 1.5);
 
 
   .glass {
-    height: 70vh;
+    height: proportion(45vw, 0.75);
     overflow: hidden;
     border-radius: 20px;
 
@@ -41,11 +45,12 @@
 
 #handmade {
   text-align: center;
+  background: #0F1342;
   img {
-    position: absolute;
+    position: relative;
     width: 50%;
     height: auto;
-    top: 200px;
+    top: 300px;
     border-radius: 20px;
     box-shadow: 0px 0px 13px 5px rgba(255, 255, 255, 0.4);
 
@@ -55,15 +60,30 @@
   }
 
   h3 {
-    position: absolute;
-    top: 12.5%;
-    font-size: 20px;
+    position: relative;
+    align-self: center;
+    font-size: 1.25rem;
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
     text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.4);
   }
 }
 
+#carbnb {
+  background: #4B122A;
+  display: flex;
+
+  img {
+    align-items: flex-end;
+    position: absolute;
+    width: 90%;
+    height: auto;
+    top: 30vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 13px 5px rgba(255, 255, 255, 0.4);
+  }
+  
+}
 .project-description {
   padding-top: 7vh;
   top: 0;
@@ -77,17 +97,12 @@
   }
 }
 
-#handmade {
-  background: #0F1342;
-}
 
-#carbnb {
-  background: #4B122A;
-}
+
 
 .handmade-description {
   h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 0;
     color: #5409DA;
   }
@@ -95,7 +110,7 @@
 
 .carbnb-description {
   h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 0;
     color: rgb(206, 232, 10);
   }

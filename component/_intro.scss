@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Monsieur+La+Doulaise&family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+#smooth-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.intro-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .intro {
   width: 75%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 0;
   text-align: center;
 
   h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
@@ -57,7 +71,7 @@
     margin-top: 50px;
 
     h1 {
-      font-size: 36px;
+      font-size: 2.25rem;
     }
 
     .self {
