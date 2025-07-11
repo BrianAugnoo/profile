@@ -45,8 +45,8 @@
         <div class="skills">
           <h2>Skills</h2>
 
-          <div class="cards">
-            <div class="front-end" data-lag="0.5">
+          <div class="cards" >
+            <div class="front-end" id="card">
               <h3>front-end | UI/UX</h3>
               <div class="skills-glass">
                 <div class="glass-column">
@@ -78,11 +78,16 @@
                   <img src="images/icons8-tailwind-css-64.png" alt="tailwind">
                   <p>tailwind</p>
                 </div>
+
+                <div class="glass">
+                  <img src="images/GSAP.jpg" alt="GSAP">
+                  <p>GSAP</p>
+                </div>
               </div>
               </div>
             </div>
 
-            <div class="back-end" data-lag="0.75">
+            <div class="back-end" id="card">
               <h3>back-end</h3>
               <div class="skills-glass">
                 <div class="glass-column">
@@ -121,7 +126,7 @@
               </div>
             </div>
 
-            <div class="data-base" data-lag="1">
+            <div class="data-base" id="card">
               <h3>data-base | Hosting</h3>
               <div class="skills-glass">
                 <div class="glass-column">
@@ -161,7 +166,7 @@
               </div>
             </div>
 
-            <div class="appendix" data-lag="1.25">
+            <div class="appendix" id="card">
               <h3>appendix</h3>
               <div class="skills-glass">
                 <div class="glass-column">
@@ -226,14 +231,18 @@
           <div class="project-column">
             <div class="ilustrator">
               <div class="glass" id="handmade">
+                <h3>A creative hub for handmade lovers to showcase crafts,
+                  <br>discover unique pieces, and grow a community around authentic creations.
+                </h3>
                 <img src="images/handmade_f.png" alt="" class="ilustrator-img">
               </div>
-              <div class="glass" id="carbnb"></div>
-              <div class="glass"></div>
+              <div class="glass" id="carbnb">
+                <img src="images/carbnb.png" alt="" class="ilustrator-img">
+              </div>
             </div>
 
-            <div class="project-description" data-spacing="false">
-              <h3>Title</h3>
+            <div class="project-description handmade-description" data-project="handmade">
+              <h3>-Handmade</h3>
               <p>
                 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
                 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -245,8 +254,10 @@
           </div>
         </div>
       </div>
+      <div style="margin-top: 100vh;">.</div>
     </div>
   </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>

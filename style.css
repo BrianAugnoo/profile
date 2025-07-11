@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Lavishly+Yours&family=Monsieur+La+Doulaise&family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Monsieur+La+Doulaise&family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Lavishly+Yours&family=Monsieur+La+Doulaise&family=Niconne&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 .op-0 {
@@ -288,7 +289,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 60%;
-  height: 233vh;
+  height: 150vh;
 }
 .ilustrator .glass {
   height: 70vh;
@@ -298,10 +299,10 @@
 .ilustrator .glass img {
   border-radius: 20px;
 }
-.ilustrator .glass img :hover {
-  transform: rotate(-30deg);
-}
 
+#handmade {
+  text-align: center;
+}
 #handmade img {
   position: absolute;
   width: 50%;
@@ -310,9 +311,20 @@
   border-radius: 20px;
   box-shadow: 0px 0px 13px 5px rgba(255, 255, 255, 0.4);
 }
+#handmade img :hover {
+  transform: rotate(-30deg);
+}
+#handmade h3 {
+  position: absolute;
+  top: 12.5%;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.4);
+}
 
 .project-description {
-  position: sticky;
+  padding-top: 7vh;
   top: 0;
   width: 35%;
   height: 70vh;
@@ -324,21 +336,23 @@
 }
 
 #handmade {
-  background: rgba(2, 20, 86, 0.456);
+  background: #0F1342;
 }
 
-.description-spacing {
-  padding-top: 75px;
+#carbnb {
+  background: #4B122A;
 }
 
-.relative-position {
-  position: relative;
-  top: 70vh;
+.handmade-description h3 {
+  font-size: 24px;
+  margin-top: 0;
+  color: #5409DA;
 }
 
-.sticky-position {
-  position: sticky;
-  bottom: 70vh;
+.carbnb-description h3 {
+  font-size: 24px;
+  margin-top: 0;
+  color: rgb(206, 232, 10);
 }
 
 body {
