@@ -1,0 +1,141 @@
+.space-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(ellipse at center top, 
+        rgba(20, 20, 40, 0.9) 0%, 
+        rgba(15, 15, 30, 0.95) 30%, 
+        rgba(8, 8, 20, 0.98) 60%, 
+        rgba(0, 0, 0, 1) 100%);
+    animation: spaceShift 20s ease-in-out infinite;
+}
+
+@keyframes spaceShift {
+    0%, 100% { 
+        background: radial-gradient(ellipse at center top, 
+            rgba(20, 20, 40, 0.9) 0%, 
+            rgba(15, 15, 30, 0.95) 30%, 
+            rgba(8, 8, 20, 0.98) 60%, 
+            rgba(0, 0, 0, 1) 100%);
+    }
+    50% { 
+        background: radial-gradient(ellipse at center top, 
+            rgba(25, 15, 45, 0.9) 0%, 
+            rgba(20, 10, 35, 0.95) 30%, 
+            rgba(10, 5, 25, 0.98) 60%, 
+            rgba(0, 0, 0, 1) 100%);
+    }
+}
+
+.horizon-curve {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.horizon-curve::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, 
+        rgba(255, 255, 255, 0.1) 0%, 
+        rgba(200, 200, 255, 0.08) 10%, 
+        rgba(150, 150, 200, 0.05) 20%, 
+        rgba(100, 100, 150, 0.02) 30%, 
+        transparent 40%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: none;
+    animation: horizonPulse 8s ease-in-out infinite;
+}
+
+@keyframes horizonPulse {
+    0%, 100% { 
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    50% { 
+        border-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.star-field {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(1px 1px at 20px 30px, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 40px 70px, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.3), transparent),
+        radial-gradient(1px 1px at 160px 30px, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 200px 60px, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1px 1px at 250px 90px, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1px 1px at 300px 20px, rgba(255,255,255,0.6), transparent);
+    background-repeat: repeat;
+    background-size: 350px 150px;
+    opacity: 0.4;
+    animation: starTwinkle 12s ease-in-out infinite;
+    z-index: -1;
+}
+
+@keyframes starTwinkle {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.1; }
+}
+
+.shooting-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.shooting-star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: shootingStar 4s ease-out forwards;
+}
+
+.shooting-star::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255,255,255,0.6), transparent);
+    transform: translateX(-80px);
+}
+
+@keyframes shootingStar {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(300px) translateY(200px);
+        opacity: 0;
+    }
+}

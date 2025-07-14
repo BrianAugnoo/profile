@@ -321,6 +321,7 @@
 }
 
 #handmade {
+  display: inline;
   text-align: center;
   background: #0F1342;
 }
@@ -328,7 +329,7 @@
   position: relative;
   width: 50%;
   height: auto;
-  top: 300px;
+  top: 10vh;
   border-radius: 20px;
   box-shadow: 0px 0px 13px 5px rgba(255, 255, 255, 0.4);
 }
@@ -337,37 +338,50 @@
 }
 #handmade h3 {
   position: relative;
-  align-self: center;
   font-size: 1.25rem;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.4);
+  top: 2vw;
 }
 
 #carbnb {
   background: #4B122A;
-  display: flex;
+  display: inline;
+  text-align: center;
 }
 #carbnb img {
-  align-items: flex-end;
-  position: absolute;
-  width: 90%;
+  position: relative;
+  width: 85%;
   height: auto;
-  top: 30vh;
+  top: 10vw;
   border-radius: 20px;
   box-shadow: 0px 0px 13px 5px rgba(255, 255, 255, 0.4);
+}
+#carbnb h3 {
+  position: relative;
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.4);
+  top: 2vw;
 }
 
 .project-description {
   padding-top: 7vh;
   top: 0;
   width: 35%;
-  height: 70vh;
+  height: 33.75vw;
   overflow-wrap: break-word;
   text-align: start;
 }
 .project-description h3 {
   margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.project-description p {
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 .handmade-description h3 {

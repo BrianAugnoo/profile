@@ -48,17 +48,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
 
-
+  const ilustratorHeigth = document.querySelector(".ilustrator").getBoundingClientRect().innerHeight
   gsap.to(".project-description", {
   scrollTrigger: {
     trigger: ".project-description",
     start: "top",
-    end: "bottom + 140vh",
+    end: "bottom",
     scrub: true,
     pin: true,
   },
   opacity: 1,
-  y: "20vh",
+  y: ilustratorHeigth * (1 + 1/20),
   onUpdate: () => {
     const handmadePosition = document.querySelector("#handmade").getBoundingClientRect();
     const carbnbPosition = document.querySelector("#carbnb").getBoundingClientRect();
