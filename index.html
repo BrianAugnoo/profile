@@ -4,16 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brian Augnoo</title>
+  <title>Augnoo Brian</title>
+  <meta name="description" content="Portfolio of Augnoo Brian — full-stack developer passionate about web technologies, creative projects, and interactive experiences." />
+  <meta name="author" content="Brian Augnoo" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Augnoo Brian" />
+  <meta property="og:description" content="Portfolio of Augnoo Brian — full-stack developer passionate about web technologies, creative projects, and interactive experiences." />
+  <meta property="og:image" content="http://augnoo.me/profile/images/portfolio" />
+  <meta property="og:url" content="http://augnoo.me/profile" />
+  <meta property="og:type" content="website" />
+
   <link rel="stylesheet" href="style.css">
-   <link rel="icon" href="images/icon.png" type="image/png">
+  <link rel="icon" href="images/icon.png" type="image/png">
+
+  <link rel="canonical" href="http://augnoo.me/profile" />
+  
 </head>
 
 <body>
-  <div class="cursor-follower">
-    <span>VIEW</span>
-    <small>DETAILS</small>
-  </div>
+    <div class="cursor-follower" data-url="https://www.google.com/?hl=fr">
+      <span>VIEW</span>
+      <small>DETAILS</small>
+    </div>
+  
 
   <div class="fix">
     <img src="images/logo.png" alt="">
@@ -27,6 +41,12 @@
 
   <div id="smooth-wrapper">
     <div id="smooth-content">
+      <div class="mobile-warning">
+        <h2>the mobile version is still in production
+          <br>please use a computer for the moment
+        </h2>
+      </div>
+
       <div class="intro-container">
         <div class="intro" id="intro">
           <h1>
@@ -252,7 +272,7 @@
             <div class="project-description handmade-description" data-project="handmade">
               <h3>-Handmade</h3>
               <p>
-                Handmade is a full-stack web application built with Ruby on Rails and enhanced with JavaScript for dynamic interactions. It serves as a creative hub where craft lovers can showcase their handmade creations, explore unique pieces from fellow artisans, and engage with an authentic community. Users can create profiles, upload projects with images, like and comment on others’ work, and discover inspiring creations through a curated feed. Handmade focuses on authenticity, community-driven discovery, and simplicity — offering makers a space to share their passion and grow together.
+                Handmade is a full-stack web application built with Ruby on Rails and enhanced with JavaScript for dynamic interactions. It serves as a creative hub where craft lovers can showcase their handmade creations, explore unique pieces from fellow artisans, and engage with an authentic community. Users can create profiles, upload projects with images, like and comment on others’ work, and discover inspiring creations through a curated feed. Handmade focuses on authenticity, community-driven discovery, and simplicity — offering makers a space to share their passion and grow together. (mobile only)
               </p>
             </div>
           </div>
@@ -272,8 +292,22 @@
             <p id="my-form-status"></p>
           </form>
         </div>
+
       </div>
-      <div style="margin-top: 100vh;">.</div>
+      <div class="footer">
+          <div class="footer-content">
+              <span class="footer-text">© 2025 augnoo.me</span>
+              <div class="social-icons">
+                  <a href="https://github.com/BrianAugnoo" target="_blank" class="github">
+                    <img src="images/github-white-icon.svg" alt="">
+                  </a>
+                  <a href="https://linkedin.com/in/brian-augnoo" target="_blank">
+                    <img src="images/linkedin-app-white-icon.svg" alt="">
+                  </a>
+              </div>
+          </div>
+      </div>
+      <!-- <div style="margin-top: 100vh;">.</div> -->
     </div>
   </div>
 

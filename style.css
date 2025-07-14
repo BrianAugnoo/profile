@@ -21,6 +21,7 @@
 }
 
 #smooth-content {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -333,9 +334,6 @@
   border-radius: 20px;
   box-shadow: 0px 0px 13px 5px rgba(255, 255, 255, 0.4);
 }
-#handmade img :hover {
-  transform: rotate(-30deg);
-}
 #handmade h3 {
   position: relative;
   font-size: 1.25rem;
@@ -393,14 +391,14 @@
 .carbnb-description h3 {
   font-size: 1.5rem;
   margin-top: 0;
-  color: rgb(206, 232, 10);
+  color: #4B122A;
 }
 
 .cursor-follower {
   position: fixed;
   width: 90px;
   height: 90px;
-  background: radial-gradient(circle, #fff 40%, #aaa);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   pointer-events: none;
   display: flex;
@@ -409,7 +407,8 @@
   justify-content: center;
   font-weight: bold;
   font-size: 12px;
-  color: #111;
+  color: black;
+  font-weight: bolder;
   z-index: 9999;
   opacity: 0;
   transform: translate(-50%, -50%);
@@ -570,6 +569,40 @@
     padding: 0;
   }
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 30vh;
+  background: #2D3748;
+}
+.footer ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #000;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+}
+.footer .footer-content a img {
+  width: 30px;
+  height: 30px;
+}
+
+.github {
+  margin-right: 20px;
+}
+
 body {
   background: black;
   font-family: "Old Standard TT", serif;
@@ -599,6 +632,16 @@ body {
   position: relative;
   width: 100%;
   margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.mobile-warning {
+  display: none;
+  margin-top: 20vh;
+  font-size: 0.7rem;
+  width: 100vw;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.416);
 }
 
 @media (max-width: 960px) {
@@ -611,6 +654,9 @@ body {
   /* For a screen < 720px, this CSS will be read */
   .container {
     width: 500px;
+  }
+  .mobile-warning {
+    display: inline;
   }
   .op-0 {
     display: none;

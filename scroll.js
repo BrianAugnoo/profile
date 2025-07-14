@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     smoother.scrollTo("#education", true, "center center");
   })
 
+  contact.addEventListener("click", (e) => {
+    e.preventDefault();
+    smoother.scrollTo(".contact", true, "center center");
+  })
+
   gsap.fromTo(".show-cv",
   { rotate: -5 },
   {
@@ -64,11 +69,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const carbnbPosition = document.querySelector("#carbnb").getBoundingClientRect();
     const description = document.querySelector(".project-description");
     const descriptionPosition = description.getBoundingClientRect();
+    const handmadeDescription = "It serves as a creative hub where craft lovers can showcase their handmade creations, explore unique pieces from fellow artisans, and engage with an authentic community. Users can create profiles, upload projects with images, like and comment on others’ work, and discover inspiring creations through a curated feed. Handmade focuses on authenticity, community-driven discovery, and simplicity — offering makers a space to share their passion and grow together. (mobile only)";
+    const carbnbDescription = "Carbnb is a full-stack web application inspired by the car-sharing model, built with Ruby on Rails and enriched with JavaScript for seamless user interactions. Designed as a prototype, it allows users to explore, list, and book vehicles within a community-driven platform. The app features user authentication, vehicle listings with images and descriptions, booking flows, and availability management. Carbnb emphasizes simplicity and intuitive navigation, providing a functional preview of how a peer-to-peer car-sharing experience could work. Though not a fully polished product, this prototype showcases the essential building blocks of a collaborative mobility platform.";
 
     if (description.dataset.project === "handmade" && (carbnbPosition.top === descriptionPosition.top || carbnbPosition.top < 150)) {
       console.log("change into carbnb");
       description.dataset.project = "carbnb";
       description.querySelector("h3").textContent = "-Carbnb";
+      description.querySelector("p").textContent = carbnbDescription;
       description.classList.add("carbnb-description");
       description.classList.remove("handmade-description");
 
@@ -76,6 +84,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       console.log("change into handmade");
       description.dataset.project = "handmade";
       description.querySelector("h3").textContent = "-Handmade";
+      description.querySelector("p").textContent = handmadeDescription;
       description.classList.add("handmade-description");
       description.classList.remove("carbnb-description");
 

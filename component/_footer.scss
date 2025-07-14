@@ -1,0 +1,38 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 30vh;
+  background: #2D3748;
+  
+  ::before {
+    content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: #000;
+            border-radius: 0 0 50% 50% / 0 0 100% 100%
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+
+    a {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+ }
+}
+
+.github {
+    margin-right: 20px;
+}

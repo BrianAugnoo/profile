@@ -11,6 +11,7 @@
 @import 'component/education';
 @import 'component/project';
 @import 'component/contact';
+@import 'component/footer';
 
 
 body {
@@ -48,8 +49,17 @@ body {
   position: relative;
   width: 100%;
   margin-top: 20vh;
+  margin-bottom: 20vh;
 }
 
+.mobile-warning {
+  display: none;
+  margin-top: 20vh;
+  font-size: 0.7rem;
+  width: 100vw;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.416);
+}
 @media (max-width: 960px) {
 
   /* For a screen < 960px, this CSS will be read */
@@ -66,13 +76,9 @@ body {
     width: 500px;
   }
 
-//   html, body {
-//   width: 100vw;
-//   background: black;
-//   font-family: "Old Standard TT", serif;
-//   color: #fcfcfc;
-//   overflow: hidden;
-//  }
+  .mobile-warning {
+    display: inline;
+  }
 
  .op-0 {
   display: none;
