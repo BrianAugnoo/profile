@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollSmoother)
+  gsap.registerPlugin(ScrollTrigger ,ScrollSmoother)
   let smoother = ScrollSmoother.create({
     wrapper: "#smooth-wrapper",
     content: "#smooth-content",
@@ -84,4 +84,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 });
-
